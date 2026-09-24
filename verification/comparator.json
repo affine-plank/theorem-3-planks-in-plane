@@ -1,0 +1,7 @@
+{
+  "challenge_module": "Plane",
+  "solution_module": "Plane",
+  "theorem_names": ["Plane.three_planks_cover_body"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": false
+}

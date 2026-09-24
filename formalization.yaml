@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/v0.4.schema.json
+version: v0.4
+
+project:
+  name: The affine plank conjecture for three planks in the plane
+  authors: [Brown Zaz]
+  license: Not specified
+
+sources:
+  - title: The affine plank theorem for three planks in the plane
+    authors: [Brown Zaz]
+    id: https://zazbrown.com/research/paper/affine-plank/three-planks-in-the-plane/
+    type: original-proof
+    note: >-
+      Original proof developed in this project. The linked companion manuscript
+      presents this work (2026).
+
+automation:
+  methods:
+    - method: agent
+      models: [GPT-6 Astra, Claude Fable 5.1]
+      framework: Codex and Claude Code
+
+status:
+  scope: >-
+    Three planks covering a convex subset of the plane with nonempty interior
+    have total relative width at least one.
+  main_results:
+    - declaration: Plane.three_planks_cover_body
+      file: Plane.lean
+
+review:
+  status: self-assessed
+  notes: Build, kernel-replay and Comparator instructions are in README.md.
