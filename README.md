@@ -1,5 +1,7 @@
 # The affine plank conjecture for three planks in the plane
 
+[![Proof checks](https://github.com/affine-plank/theorem-3-planks-in-plane/actions/workflows/proof.yml/badge.svg)](https://github.com/affine-plank/theorem-3-planks-in-plane/actions/workflows/proof.yml)
+
 Three planks covering a convex body in the plane have total relative width
 at least one.
 
